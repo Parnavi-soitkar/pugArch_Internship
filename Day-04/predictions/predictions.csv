@@ -1,0 +1,21 @@
+cleanliness_score,odor_score,waste_level,complaints,footfall,hours_since_cleaning,Actual_Hygiene_Risk,Predicted_Hygiene_Risk,Actual_Risk_Label,Predicted_Risk_Label
+6,7,6,4,300,10,1,1,High Risk,High Risk
+2,10,9,10,500,24,1,1,High Risk,High Risk
+4,8,8,7,390,16,1,1,High Risk,High Risk
+4,9,8,8,410,18,1,1,High Risk,High Risk
+3,10,9,10,470,22,1,1,High Risk,High Risk
+6,7,6,4,290,9,1,1,High Risk,High Risk
+7,3,2,1,200,4,0,0,Low Risk,Low Risk
+8,2,2,0,170,2,0,0,Low Risk,Low Risk
+5,7,7,5,320,12,1,1,High Risk,High Risk
+8,3,2,1,190,3,0,0,Low Risk,Low Risk
+6,4,3,2,250,5,0,0,Low Risk,Low Risk
+3,10,9,9,460,19,1,1,High Risk,High Risk
+4,8,8,7,380,16,1,1,High Risk,High Risk
+3,9,9,10,450,20,1,1,High Risk,High Risk
+7,3,3,2,220,4,0,0,Low Risk,Low Risk
+3,9,9,9,450,20,1,1,High Risk,High Risk
+8,3,2,1,210,4,0,0,Low Risk,Low Risk
+3,9,8,8,400,15,1,1,High Risk,High Risk
+4,7,8,7,370,16,1,1,High Risk,High Risk
+5,8,7,6,350,14,1,1,High Risk,High Risk
