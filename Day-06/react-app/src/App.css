@@ -1,0 +1,294 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Dashboard header */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.app-header h1 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 30px;
+}
+
+.app-header p {
+    margin: 0;
+    color: #64748b;
+}
+
+.add-button {
+    white-space: nowrap;
+    background-color: #16a34a;
+}
+
+.add-button:hover {
+    background-color: #15803d;
+}
+
+/* Dashboard summary cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.07);
+    border-left: 5px solid #2563eb;
+}
+
+.card h3 {
+    margin: 0 0 14px;
+    color: #64748b;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card p {
+    margin: 0;
+    color: #0f172a;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Employee section */
+.employee-section,
+.form-section,
+.details-panel {
+    margin-bottom: 25px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.06);
+}
+
+.employee-section h2,
+.form-section h2,
+.details-panel h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: #0f172a;
+}
+
+/* Search, filter and sorting controls */
+.toolbar {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.toolbar input,
+.toolbar select,
+.form-section input,
+.form-section select {
+    width: 100%;
+    min-width: 0;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: white;
+    color: #1e293b;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+/* Employee table */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+thead {
+    background-color: #eff6ff;
+}
+
+th,
+td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    color: #334155;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+.actions button {
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+.actions button:last-child {
+    background-color: #dc2626;
+}
+
+.actions button:last-child:hover {
+    background-color: #b91c1c;
+}
+
+/* Employee form */
+.form-section form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-section label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-error {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.form-section .form-error {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+.form-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-column: 1 / -1;
+}
+
+.form-buttons button[type="button"] {
+    background-color: #64748b;
+}
+
+.form-buttons button[type="button"]:hover {
+    background-color: #475569;
+}
+
+/* Employee details */
+.details-panel p {
+    padding: 5px 0;
+    color: #475569;
+}
+
+/* Footer */
+.app-footer {
+    padding: 20px 0 5px;
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Tablet and mobile layout */
+@media (max-width: 900px) {
+    .app-container {
+        padding: 20px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .toolbar {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .app-container {
+        padding: 14px;
+    }
+
+    .app-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .app-header h1 {
+        font-size: 24px;
+    }
+
+    .employee-section,
+    .form-section,
+    .details-panel {
+        padding: 16px;
+    }
+
+    .form-section form {
+        grid-template-columns: 1fr;
+    }
+}

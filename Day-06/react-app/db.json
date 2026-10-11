@@ -1,0 +1,36 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "email": "rahul@example.com",
+      "department": "IT",
+      "designation": "Developer",
+      "salary": 35000
+    },
+    {
+      "id": 2,
+      "name": "Priya Patel",
+      "email": "priya@example.com",
+      "department": "HR",
+      "designation": "HR Executive",
+      "salary": 30000
+    },
+    {
+      "id": 3,
+      "name": "Amit Verma",
+      "email": "amit@example.com",
+      "department": "Finance",
+      "designation": "Accountant",
+      "salary": 40000
+    },
+    {
+      "id": 4,
+      "name": "Sneha Joshi",
+      "email": "sneha@example.com",
+      "department": "IT",
+      "designation": "UI Developer",
+      "salary": 45000
+    }
+  ]
+}
